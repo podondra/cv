@@ -1,2 +1,3 @@
-# cv
-My curriculum vitae
+# Curriculum Vitae
+
+My curriculum vitae in TeX using *europecv* package.
