@@ -1,12 +1,18 @@
 \documentclass[notitle,nologo,booktabs]{europecv}
-\usepackage[a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage[a4paper,margin=1in]{geometry}
 
 % personal data
 \ecvname{Podsztavek, Ondřej}
 \ecvdateofbirth{May 19, 1995}
 %\ecvemail{ondrej.podsztavek@gmail.com}
 \ecvemail{podszond@fit.cvut.cz}
-\ecvaddress{Houdkovice 11\\& Trnov 517 33\\& Czech Republic}
+%\ecvaddress{Houdkovice 11\\& Trnov 517 33\\& Czech Republic}
+\ecvaddress{
+	Faculty of Information Technology\\&
+	Thákurova 9\\&
+	160 00 Prague 6\\&
+	Czech Republic
+}
 \ecvtelephone{+420604236179}
 
 \begin{document}
@@ -27,12 +33,19 @@
 		Czech Technical University in Prague, Prague
 		(Czech Republic)\\&
 		Branch of study: Computer Science,
-		\textit{Graduated with honors}\\&
+		\textit{Graduated with honours}\\&
 		Thesis:
-		\textit{Deep Learning in Large Astronomical Spectra Archives}\\&
+		\textbf{Deep Learning in Large Astronomical Spectra Archives}\\&
+		\textit{My bachelor's thesis aimed to find emission-line
+			spectra using deep learning. Firstly,
+			I trained and compared two neural
+			networks (dense and VGG-like convolutional network)
+			on spectral data from Ondřejov telescope.
+			Then I used the convolutional network to classify
+			spectra from a huge LAMOST archive and that led to
+			a discovery of yet unknown stars with interesting
+			physical properties.}\\&
 		Supervisor: RNDr. Petr Škoda, CSc.
-		%Available online at
-		%\url{https://doi.org/10.5281/zenodo.818247}.
 	}
 
 	\ecvsection{Research experience}
@@ -40,32 +53,59 @@
 		\textbf{Researcher}\\&
 		Astronomical Institute of the Czech Academy of Sciences,\\&
 		Ondřejov (Czech Republic)\\&
-		Application of Neural Networks to Stellar Spectra
+		Application of Neural Networks to Stellar Spectra\\&
+		\textit{After I finished my bachelor thesis there was still
+			a lot of work to be done therefore I started to work
+			on an application of different neural network types
+			to stellar spectra. I also did also a great amount of
+			work in preprocessing and balancing domain.}
 	}
 
 	\ecvsection{Oral presentations}
 	\ecvitem{Mar 2018}{
-		Podsztavek, Ondřej.
 		\textbf{Reinforcement Learning in Recommendation:
-		Off-policy policy evaluation}.
-		Presentation at meeting of
-		\textit{Machine Learning and Computational Intelligence Group}
-		(ML-CIG), Prague.
+		Off-policy Policy Evaluation}.
+		Presentation at the meeting of
+		Machine Learning and Computational Intelligence Group (ML-CIG),
+		Prague.\\&
+		\textit{This presentation addressed the problem of evaluation
+			of new policy from off-line data in order to ascertain
+			that it can be safely deployed. The problem was shown
+			from point of view of both contextual bandits and full
+			reinforcement learning formalization. I presented
+			algorithms for off-policy policy evaluation
+			as direct method, inverse propensity score,
+			double robust estimator, important sampling and other
+			modification of these methods.}
 	}
 	\ecvitem{Jun 2017}{
-		Podsztavek, Ondřej.
 		\textbf{Deep Learning in Large Astronomical Archives}.
-		Bachelor's thesis presented at
-		\textit{European Week of Astronomy and Space Science}
-		(EWASS 2017), Prague.
+		Bachelor's thesis presented at Symposium 14 - Astroinformatics:
+		From big data to understanding the universe at large,
+		European Week of Astronomy and Space Science (EWASS 2017),
+		Prague.\\&
+		\textit{Talk about my bachelor's thesis presented at the
+			largest
+			European astronomical conference. I focused the talk
+			on domain adaptation and imbalanced learning.
+			Firstly, I emphasized the problem of domain adaptation,
+			which means using data from a different telescope to
+			train
+			a machine learning algorithm to classify spectra from
+			totally different telescope. Secondly, I talk about
+			the challenge of imbalanced learning because
+			interesting objects are usually in minority therefore
+			are difficult to learn about. I proposed SMOTE as a
+			solution which I verify experimentally in my work.}
 	}
 
 	\ecvsection{Community involvement}
 	\ecvitem{Let's talk ML Prague}{
-		Let's Talk ML is regular meeting of students interseted
+		Let's Talk ML is once a fortnight meeting of students interested
 		in Machine Learning and Artificial Intelligence.
-		Talk about \textit{Transfer Learning} and
-		\textit{Deep Q-Network} (DQN).
+		The format is usually two short talks followed by discussion.
+		I am a regular visitor and I already had two talks about
+		\textit{Transfer Learning} and \textit{Deep Q-Network}.
 	}
 
 	%\ecvsection{Work experience}
@@ -85,7 +125,7 @@
 	\ecvsection{Languages}
 	\ecvitem{English}{
 		CEFR level: \textit{C1 (Proficient user)}\\&
-		International English Language Testing System (IELTS)\\&
+		Obtained by International English Language Testing System\\&
 		Test Report Form: Academic
 	}
 
@@ -94,6 +134,6 @@
 		Stellar Physics Department\\&
 		Astronomical Institute of the Czech Academy of Sciences\\&
 		skoda@sunstel.asu.cas.cz
-		}
+	}
 \end{europecv}
 \end{document}
