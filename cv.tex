@@ -1,4 +1,5 @@
-\documentclass[notitle,nologo,booktabs]{europecv}
+\documentclass[totpages,nologo,booktabs]{europecv}
+\usepackage{graphicx}
 \usepackage[a4paper,margin=1in]{geometry}
 \usepackage{hyperref}
 
@@ -6,9 +7,11 @@
 \ecvname{Podsztavek, Ondřej}
 \ecvdateofbirth{May 19, 1995}
 %\ecvemail{ondrej.podsztavek@gmail.com}
-\ecvemail{podszond@fit.cvut.cz}
-\ecvaddress{Houdkovice 11\\& Trnov 517 33\\& Czech Republic}
-\ecvtelephone{+420 604 236 179}
+\ecvemail{\href{mailto:ondrej.podsztavek@gmail.cz}{ondrej.podsztavek@gmail.cz}}
+\ecvprofessional{\href{mailto:podszond@fit.cvut.cz}{podszond@fit.cvut.cz}}
+\ecvaddress{Houdkovice 11, Trnov 517 33, Czech Republic}
+%\ecvtelephone{+420 604 236 179}
+\ecvnationality{Czech}
 
 \begin{document}
 \begin{europecv}
@@ -16,32 +19,12 @@
 	%\ecvitem{Website}{\url{https://podondra.cz}}
 	\ecvitem{GitHub}{\url{https://github.com/podondra}}
 
-	\ecvsection{Education}
-	\ecvitem{2017--Present}{
-		\textbf{Master's degree}\\&
-		Czech Technical University in Prague, Czech Republic\\&
-		Branch of study: Knowledge Engineering
-	}
-	\ecvitem{2014--2017}{
-		\textbf{Bachelor's degree}\\&
-		Czech Technical University in Prague, Czech Republic\\&
-		Branch of study: Computer Science\\&
-		\textit{Graduated with honours}\\&
-		Thesis: Deep Learning in Large Astronomical Spectra Archives\\&
-		Supervisor: Dr. Petr Škoda, Ph.D.\\&
-		\textit{My bachelor's thesis aimed to find emission-line
-		spectra using deep learning. Firstly,
-		I trained and compared two neural networks
-		(dense and VGG-like convolutional network)
-		on spectral data from Ondřejov telescope.
-		Then I used the convolutional network to classify
-		spectra from a huge LAMOST archive.
-		The result showed that the network is able to
-		discover yet unknown stars with interesting physical
-		properties.}
-	}
-
 	\ecvsection{Research experience}
+	\ecvitem{Jun 2018--Present}{
+		\textbf{Junior Researcher}\\&
+		Faculty of Information Technology,\\&
+		Czech Technical University in Prague
+	}
 	\ecvitem{Nov 2016--Dec 2017}{
 		\textbf{Researcher}\\&
 		Astronomical Institute of the Czech Academy of Sciences,\\&
@@ -55,16 +38,54 @@
 		work in preprocessing and data balancing domains.}
 	}
 
-	\ecvsection{Community involvement}
-	\ecvitem{Let's talk ML Prague}{
-		Let's Talk ML is once a fortnight meeting of students interested
-		in Machine Learning and Artificial Intelligence.
-		The format is usually two short talks followed by discussion.
-		I am a regular visitor and I already had two talks about
-		\textit{Transfer Learning} and \textit{Deep Q-Network}.
+	\ecvsection{Education}
+	\ecvitem{2017--Present}{
+		\textbf{Master's degree}\\&
+		Faculty of Information Technology\\&
+		Czech Technical University in Prague\\&
+		Branch of study: Knowledge Engineering\\&
+		Thesis: Neural Network Based Domain Adaptation in Spectroscopis Sky Surveys
+	}
+	\ecvitem{Aug 2018--Dec 2018}{
+		\textbf{Internation exchange?}\\& % TODO better name
+		Nanyang Technological University, Singapore\\&
+	}
+	\ecvitem{2014--2017}{
+		\textbf{Bachelor's degree}\\&
+		Faculty of Information Technology\\&
+		Czech Technical University in Prague\\&
+		Branch of study: Computer Science\\&
+		\textit{Graduated with honours}\\&
+		Thesis: Deep Learning in Large Astronomical Spectra Archives\\&
+		Supervisor: RNDr. Petr Škoda, CSc.\\&
+		\textit{My bachelor's thesis aimed to find emission-line
+		spectra using deep learning. Firstly,
+		I trained and compared two neural networks
+		(dense and VGG-like convolutional network)
+		on spectral data from Ondřejov telescope.
+		Then I used the convolutional network to classify
+		spectra from a huge LAMOST archive.
+		The result showed that the network is able to
+		discover yet unknown stars with interesting physical
+		properties.}
 	}
 
+	\ecvsection{Publications}
+
+	%\ecvsection{Community involvement}
+	%\ecvitem{Let's talk ML Prague}{
+	%	Let's Talk ML is once a fortnight meeting of students interested
+	%	in Machine Learning and Artificial Intelligence.
+	%	The format is usually two short talks followed by discussion.
+	%	I am a regular visitor and I already had two talks about
+	%	\textit{Transfer Learning} and \textit{Deep Q-Network}.
+	%}
+
 	\ecvsection{Oral presentations}
+	\ecvitem{Oct 2019}{
+		\textbf{Anomaly Detection in Air Pollution Data}.
+		DaZ \& WIKT 2019\\&
+	}
 	\ecvitem{Mar 2018}{
 		\textbf{Reinforcement Learning in Recommendation:
 		Off-policy Policy Evaluation}.
@@ -83,7 +104,7 @@
 	}
 	\ecvitem{Jun 2017}{
 		\textbf{Deep Learning in Large Astronomical Archives}.
-		Bachelor's thesis presented at Symposium 14 - Astroinformatics:
+		Bachelor's thesis presented at Symposium 14 -- Astroinformatics:
 		From big data to understanding the universe at large,
 		European Week of Astronomy and Space Science (EWASS 2017),
 		Prague.\\&
@@ -121,11 +142,11 @@
 		decision making.}
 	}
 
-	\ecvsection{Personal skills}
-	\ecvitem{Programming languages}{Python, C, C++}
-	\ecvitem{Scientific libraries}{
-		TensorFlow, scikit-learn, NumPy, Pandas
-	}
+	%\ecvsection{Personal skills}
+	%\ecvitem{Programming languages}{Python, C, C++}
+	%\ecvitem{Scientific libraries}{
+	%	TensorFlow, scikit-learn, NumPy, Pandas
+	%}
 
 	\ecvsection{Languages}
 	\ecvitem{English}{
@@ -134,12 +155,12 @@
 		Test Report Form: Academic
 	}
 
-	\ecvsection{References}
-	\ecvitem{Dr. Petr Škoda, Ph.D.}{
-		Senior Researcher in Astroinformatics\\&
-		Stellar Physics Department\\&
-		Astronomical Institute of the Czech Academy of Sciences\\&
-		skoda@sunstel.asu.cas.cz
-	}
+	%\ecvsection{References}
+	%\ecvitem{RNDr. Petr Škoda, CSc.}{
+	%	Senior Researcher in Astroinformatics\\&
+	%	Stellar Physics Department\\&
+	%	Astronomical Institute of the Czech Academy of Sciences\\&
+	%	\href{mailto:skoda@sunstel.asu.cas.cz}{skoda@sunstel.asu.cas.cz}
+	%}
 \end{europecv}
 \end{document}
